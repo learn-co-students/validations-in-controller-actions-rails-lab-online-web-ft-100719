@@ -11,7 +11,7 @@ class PostsController < ApplicationController
     if @post.update(post_params)
       redirect_to post_path(@post)
     else 
-      redirect_to update
+      render :edit
     end 
   end
 
